@@ -1,0 +1,26 @@
+=======================================
+         CLÍNICA SALUD TOTAL
+         FACTURA DETALLADA
+=======================================
+Medicamento : PARA
+Cantidad    : 3
+Subtotal    : S/ 30.0
+---------------------------------------
+Medicamento : PARA
+Cantidad    : 1
+Subtotal    : S/ 10.0
+---------------------------------------
+Medicamento : PARACETAMOL
+Cantidad    : 3
+Subtotal    : S/ 0.0
+---------------------------------------
+Medicamento : PARACETAMOL
+Cantidad    : 3
+Subtotal    : S/ 0.0
+---------------------------------------
+Paciente      : ADFFFF ASDF
+DNI           : 76122302
+Total a Pagar : S/ 40.0
+Fecha Emisión : 2025-06-24 18:54:34
+=======================================
+Gracias por su compra
