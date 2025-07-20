@@ -35,8 +35,8 @@ static Connection conn=null;
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtIdEspecialidad = new javax.swing.JTextField();
-        txtNombre = new javax.swing.JTextField();
+        nom = new javax.swing.JTextField();
+        con = new javax.swing.JTextField();
         btnRegistrar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
@@ -44,6 +44,7 @@ static Connection conn=null;
         btnVisualizar = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         a1 = new javax.swing.JTextField();
+        rol = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,11 +56,11 @@ static Connection conn=null;
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
 
-        txtIdEspecialidad.setFont(new java.awt.Font("SimSun", 0, 12)); // NOI18N
-        txtIdEspecialidad.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nombre", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SimSun", 0, 14))); // NOI18N
+        nom.setFont(new java.awt.Font("SimSun", 0, 12)); // NOI18N
+        nom.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nombre", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SimSun", 0, 14))); // NOI18N
 
-        txtNombre.setFont(new java.awt.Font("SimSun", 0, 12)); // NOI18N
-        txtNombre.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Contraseña", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SimSun", 0, 14))); // NOI18N
+        con.setFont(new java.awt.Font("SimSun", 0, 12)); // NOI18N
+        con.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Contraseña", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SimSun", 0, 14))); // NOI18N
 
         btnRegistrar.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardar.png"))); // NOI18N
@@ -117,6 +118,9 @@ static Connection conn=null;
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        rol.setFont(new java.awt.Font("SimSun", 0, 12)); // NOI18N
+        rol.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Rol", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SimSun", 0, 14))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -129,8 +133,9 @@ static Connection conn=null;
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtIdEspecialidad, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
-                            .addComponent(txtNombre))
+                            .addComponent(nom, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
+                            .addComponent(con)
+                            .addComponent(rol))
                         .addGap(70, 70, 70)
                         .addComponent(a1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel3)
@@ -165,11 +170,13 @@ static Connection conn=null;
                             .addComponent(jLabel2))
                         .addGap(53, 53, 53)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtIdEspecialidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(a1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)))
+                        .addComponent(con, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)))
                 .addComponent(jLabel3)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -214,22 +221,22 @@ static Connection conn=null;
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
         try {
-        // main miconexion = new main();
-        conn=Main.Enlace(conn);
-        String sqlinsertar="insert into ADMINISTRADOR values (?,?,?)";
-        PreparedStatement psta=conn.prepareStatement(sqlinsertar);
-        
-        psta.setString(1, a1.getText());
-        psta.setString(2, txtIdEspecialidad.getText());
-        psta.setString(3, txtNombre.getText());
-        
-        psta.execute();
-        psta.close();
-        JOptionPane.showMessageDialog(null, "USUARIO REGISTRADO");
-        }
-        catch (Exception e){
-        System.out.println(e.getCause());
-    }
+    conn = Main.Enlace(conn);
+    String sqlinsertar = "INSERT INTO ADMINISTRADOR (nombre, contrasena, rol) VALUES (?, ?, ?)";
+    PreparedStatement psta = conn.prepareStatement(sqlinsertar);
+    
+    psta.setString(1, nom.getText());         // Nombre
+    psta.setString(2, con.getText());       // Contraseña
+    psta.setString(3, rol.getText());               // Rol
+
+    psta.execute();
+    psta.close();
+    
+    JOptionPane.showMessageDialog(null, "USUARIO REGISTRADO");
+} catch (Exception e) {
+    System.out.println("Error al registrar: " + e.getMessage());
+}
+
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnVisualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVisualizarActionPerformed
@@ -242,8 +249,8 @@ static Connection conn=null;
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
-        txtIdEspecialidad.setText("");
-        txtNombre.setText("");
+        nom.setText("");
+        con.setText("");
         
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
@@ -295,11 +302,12 @@ static Connection conn=null;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnVisualizar;
+    private javax.swing.JTextField con;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField txtIdEspecialidad;
-    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField nom;
+    private javax.swing.JTextField rol;
     // End of variables declaration//GEN-END:variables
 }
