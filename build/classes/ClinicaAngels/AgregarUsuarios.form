@@ -58,9 +58,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                               <Component id="nom" pref="346" max="32767" attributes="0"/>
                               <Component id="con" max="32767" attributes="0"/>
                               <Component id="rol" alignment="0" max="32767" attributes="0"/>
+=======
+                              <Component id="txtIdEspecialidad" pref="346" max="32767" attributes="0"/>
+                              <Component id="txtNombre" max="32767" attributes="0"/>
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
                           </Group>
                           <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                           <Component id="a1" min="-2" pref="71" max="-2" attributes="0"/>
@@ -104,6 +109,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< HEAD
                               <Component id="nom" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="a1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -112,6 +118,14 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="rol" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="16" max="32767" attributes="0"/>
+=======
+                              <Component id="txtIdEspecialidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="a1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="txtNombre" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="60" max="32767" attributes="0"/>
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
                       </Group>
                   </Group>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -154,7 +168,11 @@
             </Property>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JTextField" name="nom">
+=======
+        <Component class="javax.swing.JTextField" name="txtIdEspecialidad">
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SimSun" size="12" style="0"/>
@@ -168,7 +186,11 @@
             </Property>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JTextField" name="con">
+=======
+        <Component class="javax.swing.JTextField" name="txtNombre">
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SimSun" size="12" style="0"/>
@@ -272,6 +294,7 @@
         </Container>
         <Component class="javax.swing.JTextField" name="a1">
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JTextField" name="rol">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -286,6 +309,8 @@
             </Property>
           </Properties>
         </Component>
+=======
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
       </SubComponents>
     </Container>
   </SubComponents>

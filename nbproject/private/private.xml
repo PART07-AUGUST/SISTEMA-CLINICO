@@ -3,10 +3,44 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/VerUsuarios.java</file>
             <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/AgregarUsuarios.java</file>
             <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Login1.java</file>
             <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/PCitaPaciente.java</file>
+=======
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Principal.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Principal1.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Principal2.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Principalfinal.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/carga.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/VerUsuarios.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/paciente.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/session.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FAgendarCitas.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/CitaPaciente.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FEspecialidades.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FVisualizarEspecialidades.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FVisualizarEnfermeros.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Facturas.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Historial.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Login.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Login1.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Main.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/pagos.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/AgregarUsuarios.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FPacientes.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FVisualizarCitas.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Menfermeros.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/MedicamentoPaciente.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Mcitas.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FVisualizarMedicos.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FInsertarMedico.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FInsertarEnfermero.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FInsertarMedicamento.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/FVisualizarMedicamentos.java</file>
+            <file>file:/C:/Users/icapc/Pictures/ClinicaGonzales/src/ClinicaAngels/Ventas.java</file>
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
         </group>
     </open-files>
 </project-private>

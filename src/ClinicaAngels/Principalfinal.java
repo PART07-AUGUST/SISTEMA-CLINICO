@@ -214,7 +214,11 @@ public class Principalfinal extends javax.swing.JFrame {
     private void btnAgendarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendarActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
+<<<<<<< HEAD
         RVerCita Fmostrar = new RVerCita();
+=======
+        Pcita Fmostrar = new Pcita();
+>>>>>>> 359e4d52bb43043cbac973561d666cfb924a57d9
         Fmostrar.setVisible(true);
         Fmostrar.pack();
     }//GEN-LAST:event_btnAgendarActionPerformed
